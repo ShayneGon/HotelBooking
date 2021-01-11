@@ -13,7 +13,10 @@ public class booking implements java.io.Serializable {
         this.displayPrice = displayPrice;
         this.bookingNumber = bookingNumber;
     }
-
+    public String toFile() {
+        return name + "," + type + "," + board + "," 
+                + displayPrice +"," + bookingNumber;
+    }
     @Override
     public String toString() {
         return "name = " + name + ", type = " + type + ", board = " + board + ", price = £" 
